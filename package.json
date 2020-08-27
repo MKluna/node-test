@@ -1,0 +1,28 @@
+{
+  "name": "test-maldonado",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de node para el profesor maldonado",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKluna/node-test.git"
+  },
+  "author": "Luna Matias & Arpirez Fabio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKluna/node-test/issues"
+  },
+  "homepage": "https://github.com/MKluna/node-test#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.1"
+  }
+}
