@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const studentController = require('../controllers/studentController');
+const projectController = require('../controllers/projectController');
 
 module.exports=function(){
 
@@ -14,6 +15,18 @@ module.exports=function(){
   router.put('/student/:id',studentController.updateStudent);
   //Eliminar Estudiante via DELETE
   router.delete('/student/:id',studentController.deletedStudent);
+
+
+  //Agregar Projec
+  router.post('/project',projectController.newProject);
+  //Obtener proyecto via GET
+  router.get('/project',projectController.showProjects);
+  //Obtener proyecto especifico por su is via GET
+  router.get('/project/:id',projectController.showProjectById);
+  //Editar Proyecto via PUT
+  router.put('/project/:id',projectController.updateProject);
+  //Eliminar Proyecto via DELETE
+  router.delete('/project/:id',projectController.deletedProject); 
 
   return router;
 }
